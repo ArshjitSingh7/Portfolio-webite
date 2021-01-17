@@ -2,11 +2,16 @@
 
 #header {
     &-home {
-        background: url('../img/new.jpg') no-repeat center center/cover;
+        background: url('../img/new1.jpg') no-repeat center center/cover;
         height: 100vh;
         color: white;
         .navbar {
             border-bottom: darkgoldenrod 5px solid;
+        }
+        .home-content {
+            h1{
+                color: white;
+            }
         }
     }
     &-inner {

@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
+body {
+  font-family: 'Dosis', sans-serif; }
+
 a {
   text-decoration: none;
   color: white; }
@@ -70,11 +73,13 @@ img {
   background-color: white; }
 
 #header-home {
-  background: url("../img/new.jpg") no-repeat center center/cover;
+  background: url("../img/new1.jpg") no-repeat center center/cover;
   height: 100vh;
   color: white; }
   #header-home .navbar {
     border-bottom: darkgoldenrod 5px solid; }
+  #header-home .home-content h1 {
+    color: white; }
 
 #header-inner {
   color: white; }
@@ -175,6 +180,8 @@ img {
           color: darkgoldenrod; }
 
 @media screen and (max-width: 975px) {
+  #header-home {
+    background: url("../img/new.jpg") no-repeat center center/cover; }
   .work .work-content {
     grid-template-columns: 1fr; }
     .work .work-content .box {
@@ -208,4 +215,4 @@ img {
 
 @media screen and (max-width: 425px) {
   .home-content .container {
-    font-size: 18px; } }
+    font-size: 14px; } }
