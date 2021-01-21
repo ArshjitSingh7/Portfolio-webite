@@ -79,6 +79,9 @@ img {
         color: white;
         background-color: black;
     }
+    &-block {
+        width : 100%;
+    }
     &-special {
         @extend %btn-shared;
         color: black;
