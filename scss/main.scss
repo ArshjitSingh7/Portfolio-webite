@@ -2,7 +2,9 @@
 
 #header {
     &-home {
-        background: url('../img/new1.jpg') no-repeat center center/cover;
+        background: url('../img/old2.jpg') no-repeat;
+        background-size: cover;
+        background-position: 20% 20%;
         height: 100vh;
         color: white;
         .navbar {
@@ -84,12 +86,12 @@
         }
     }
     .work-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content : space-around;
         .box {
-            height: 300px;
-            width: 400px;
+            height: 320px;
+            max-width: 400px;
             text-align: center;
             padding: 10px;
             border: 2px black solid;

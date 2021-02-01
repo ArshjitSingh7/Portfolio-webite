@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: 'Dosis', sans-serif; }
@@ -76,7 +77,9 @@ img {
   background-color: white; }
 
 #header-home {
-  background: url("../img/new1.jpg") no-repeat center center/cover;
+  background: url("../img/old2.jpg") no-repeat;
+  background-size: cover;
+  background-position: 20% 20%;
   height: 100vh;
   color: white; }
   #header-home .navbar {
@@ -135,12 +138,12 @@ img {
     margin-bottom: 10px; }
 
 .work .work-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 40px; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
   .work .work-content .box {
-    height: 300px;
-    width: 400px;
+    height: 320px;
+    max-width: 400px;
     text-align: center;
     padding: 10px;
     border: 2px black solid;
@@ -224,10 +227,8 @@ img {
 @media screen and (max-width: 975px) {
   #header-home {
     background: url("../img/new.jpg") no-repeat center center/cover; }
-  .work .work-content {
-    grid-template-columns: 1fr; }
-    .work .work-content .box {
-      margin: 25px auto; } }
+  .work .box {
+    margin: 25px auto; } }
 
 @media screen and (max-width: 725px) {
   .work .work-heading {
@@ -237,23 +238,7 @@ img {
 
 @media screen and (max-width: 600px) {
   .home-content .container {
-    font-size: 20px; }
-  .work .work-content {
-    margin-top: 10px;
-    font-size: 14px; }
-    .work .work-content .box {
-      height: 200px;
-      width: 200px;
-      margin-bottom: 20px; }
-      .work .work-content .box .box-img {
-        height: 50%;
-        margin-bottom: 10px; }
-      .work .work-content .box .box-content .box-title {
-        margin-bottom: 8px; }
-      .work .work-content .box .box-content .btn-dark {
-        display: block; }
-  .contact .contact-content .box {
-    font-size: 18px; } }
+    font-size: 20px; } }
 
 @media screen and (max-width: 425px) {
   .home-content .container {
