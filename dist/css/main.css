@@ -238,6 +238,9 @@ img {
 
 @media screen and (max-width: 600px) {
   .home-content .container {
+    padding-top:250px;
+  }
+  .home-content .container {
     font-size: 20px; } }
 
 @media screen and (max-width: 425px) {
